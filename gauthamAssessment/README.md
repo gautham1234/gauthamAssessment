@@ -1,13 +1,6 @@
 
 # Spring-Boot-FIle-Upload-Rest-Service
 
-The Spring boot file upload service
-1. It can upload single / multiple files as a rest post call
-2. The uploaded files meta data will be persisted in H2 in memory database
-3. Get the uploaded files meta data using a get call
-
-How to test this service
-
 1#. Using CURL
 Single file upload
 curl -F file=@"c:\\tmp\test1.txt" http://localhost:8383/api/fileupload
@@ -53,7 +46,4 @@ Request : GET
 	"contentType": "text/plain",
 	"contentSize": 15
 }]
-#Room for improvement
-1. More user-friendly exception handling for more scenarios 
-2. Make it as a microservice for other services to use (enable CORS)
-List goes on .....
+
